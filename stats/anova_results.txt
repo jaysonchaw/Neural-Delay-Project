@@ -1,0 +1,6 @@
+ANOVA Results for Synaptic Latency
+=================================
+
+pH=7.4: ANOVA F=17.789, p=1.348e-03
+pH=7.3: ANOVA F=10.501, p=1.124e-02
+pH=7.2: ANOVA F=19.729, p=3.387e-02

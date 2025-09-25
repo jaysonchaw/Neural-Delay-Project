@@ -1,0 +1,14 @@
+            group = [df_valid[(df_valid['pH']==pH) & (df_valid['temp']==T)]['latency_ms'].dropna()
+                     for T in sorted(df['temp'].unique())]
+            if all(len(g) > 1 for g in group):
+                F, p = stats.f_oneway(*group)
+                f.write(f"pH={pH}: ANOVA F={F:.3f}, p={p:.3e}\n")
+    print(f"Analysis complete. Summary -> {outfile}, Stats -> {statsfile}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--infile", type=str, default="data/raw/sim_raw_trials.csv")
+    parser.add_argument("--outfile", type=str, default="data/processed/summary_stats.csv")
+    parser.add_argument("--statsfile", type=str, default="stats/anova_results.txt")
+    args = parser.parse_args()
+    analyze(infile=args.infile, outfile=args.outfile, statsfile=args.statsfile)

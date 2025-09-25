@@ -1,0 +1,101 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\froman\fcharset0 Times-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 Project Title: 
+\f1\b0 \ul Small Physiological Perturbations and the Temporal Dynamics of Cortical Synapses\ulnone \
+
+\f0\b Author: 
+\f1\b0 \ul Jayson Chaw\ulnone \
+
+\fs20 \
+
+\f0\b Description:\
+
+\f1\b0 This folder contains code, data, and figures for the research paper submitted to 
+\f2\i The Harvard Undergraduate Research Journal (THURJ)
+\f1\i0 . The project simulates synaptic transmission delays under varying temperature and pH, analyzes outcomes, and generates summary statistics + figures.\
+\
+
+\f0\b Folder Structure:\
+
+\f1\b0 - 
+\f2\i code/
+\f1\i0  -> contains 
+\f2\i simulation.py
+\f1\i0  (generates raw data) and 
+\f2\i analysis.py
+\f1\i0  (processes + runs stats).\
+- 
+\f2\i data/raw/
+\f1\i0  ->n holds
+\f2\i  sim_raw_trials.csv
+\f1\i0  (raw simulation output).\
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 - data/processed/ -> holds processed summary tables (e.g, summary_stats.csv).\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 - 
+\f2\i stats/
+\f1\i0  -> holds ANOVA/statistical results (
+\f2\i anova_results.txt
+\f1\i0 ).\
+- 
+\f2\i figures/
+\f1\i0  -> contains 
+\f2\i fig1.png
+\f1\i0 , 
+\f2\i fig2.png
+\f1\i0 , etc. used in the paper.\
+- 
+\f2\i requirements.txt
+\f1\i0  -> lists Python dependencies (numpy, scipy, matplotlib, pandas).\
+- 
+\f2\i venv/
+\f1\i0  -> Python virtual environment (not needed if replicating elsewhere).\
+\ul (venv/ is option and can be recreated using requirements.txt)\ulnone \
+\
+
+\f0\b How to Run:\
+
+\f1\b0 1. Clone or unzip this folder.\
+2. Open a terminal and navigate into 
+\f2\i Neural_Delay_Project
+\f1\i0 .\
+3. Activate the environment: 
+\f2\i source venv/bin/activate
+\f1\i0 \
+4. Run the simulation: 
+\f2\i python code/simulation.py
+\f1\i0 \
+5. Run the analysis: 
+\f2\i python code/analysis.py
+\f1\i0 \
+6. Outputs:\
+- Data -> 
+\f2\i in data/processed/
+\f1\i0 \
+- Stats -> 
+\f2\i in stats/
+\f1\i0 \
+- Figures -> 
+\f2\i in figures/\
+
+\f1\i0 \ul (If figures do not render, rerun analysis.py to regenerate them)\ulnone \
+\
+
+\f0\b Notes:\
+
+\f1\b0 All code is for demonstration and is not meant for exact biological modeling. Figures included (
+\f2\i fig1.png
+\f1\i0 , 
+\f2\i fig2.png
+\f1\i0 ,\'85) are the ones referenced in the manuscript.\
+\
+Thank you!\
+
+\f0\b Jayson}

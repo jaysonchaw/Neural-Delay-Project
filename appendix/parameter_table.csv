@@ -1,0 +1,8 @@
+parameter,value,units,notes
+conduction_delay,0.5,ms,fixed axonal delay
+release_mean,0.5,ms,baseline mean release latency
+release_sd,0.12,ms,baseline sd of release latency
+tau_syn,1.0,ms,synaptic rise time constant
+Q10,2.0,-,kinetics scaling factor
+trials,5000.0,-,per condition
+seed,42.0,-,RNG seed for reproducibility
